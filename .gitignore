@@ -1,2 +1,9 @@
+cat > .gitignore << EOF
+venv/
 __pycache__/
-*.db
+*.pyc
+.env
+*.sqlite3
+.coverage
+htmlcov/
+EOF

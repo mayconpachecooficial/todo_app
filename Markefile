@@ -1,0 +1,16 @@
+cat > Makefile << 'EOF'
+run:
+	uvicorn app.main:app --reload
+
+test:
+	pytest --cov=app tests/
+
+install:
+	pip install -r requirements.txt
+
+clean:
+	find . -type d -name __pycache__ -exec rm -r {} +
+	rm -rf .pytest_cache htmlcov .coverage
+
+.PHONY: run test install clean
+EOF
