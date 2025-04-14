@@ -15,7 +15,9 @@ Esta é uma API RESTful construída com **FastAPI** e **SQLite** para gerenciar 
 ## Requisitos
 
 - Python 3.9+
-- Docker (opcional)
+- docker build -t todo-api .
+docker run -d -p 8000:8000 todo-api
+
 
 ## Como rodar localmente
 
